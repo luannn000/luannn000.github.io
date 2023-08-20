@@ -1,0 +1,49 @@
+* {
+    font-family: monospace;
+    text-align: center;
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    display: inline-block;
+    border-right: 2px solid white;
+    width: 13ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(13), flashing 1s infinite step-end;
+}
+
+#myLabel {
+    padding-bottom: 1px;
+    display: block;
+    font-size: 1.2em;
+    color: white;
+}
+
+#guess {
+    width: 10%;
+    display: inline-block;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+button {
+    background-color: white;
+}
+
+p {
+    color: white;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes flashing {
+    50% {
+        border-color: transparent;
+    }
+}

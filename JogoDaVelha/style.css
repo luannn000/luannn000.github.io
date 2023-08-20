@@ -1,0 +1,55 @@
+body {
+    background-color: rgba(0, 0, 0, 0.938);
+    color: white;
+    text-align: center;
+    font-family: consolas;
+}
+
+/* Index */
+
+#title {
+    font-size: 5em;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.titleButtons {
+    color: white;
+    font-size: 3em;
+}
+
+/* Tic Tac Toe */
+
+#cellDivision {
+    position: relative;
+    top: 50px;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#feedback {
+    position: relative;
+    top: 30px;
+}
+
+#restartBtn {
+    position: relative;
+    top: 20px;
+    border: 2px solid;
+    border-radius: 25px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.712);
+    transform: scale(1.5, 1.5);
+    cursor: pointer;
+}

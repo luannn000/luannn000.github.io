@@ -1,0 +1,31 @@
+body {
+    background-color: rgba(0, 0, 0, 0.884);
+    font-family: consolas;
+}
+
+#container {
+    text-align: center;
+    border: 2px solid;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.692);
+}
+
+#timeDisplay {
+    color: white;
+    font-size: 6em;
+}
+
+.timerButtons {
+    background-color: rgba(0, 0, 0, 0.411);
+    color: white;
+    font-family: consolas;
+    border: 2px solid;
+    border-radius: 10px;
+    margin: 0px 0px 10px 10px;
+    padding: 4px 12px;
+    cursor: pointer;
+}
+
+.timerButtons:hover {
+    background-color: rgba(48, 48, 48, 0.507);
+}

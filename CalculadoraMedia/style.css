@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+    font-family: consolas;
+    background-color: #7cd69f;
+}
+
+#container {
+    background-color: #298352;
+    height: 80vh;
+    margin: 0px 15%;
+    border-radius: 50px;
+}
+
+#title {
+    padding-top: 15px;
+}
+
+#submit {
+    background-color: #00592c;
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #00592caf;
+}
+
+#response {
+    visibility: hidden;
+}
