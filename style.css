@@ -6,10 +6,28 @@ body {
 
 h1 {
     color: white;
+    display: inline-block;
+    border-right: 2px solid white;
+    width: 8ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(13), flashing 1s infinite step-end;
     font-size: 3em;
 }
 
 a {
     text-decoration: none;
     color: white;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes flashing {
+    50% {
+        border-color: transparent;
+    }
 }
