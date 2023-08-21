@@ -11,7 +11,7 @@ h1 {
     width: 8ch;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 2s steps(8), flashing 1s infinite step-end;
+    animation: typing 1.5s steps(8), flashing 1s infinite step-end;
     font-size: 3em;
 }
 
