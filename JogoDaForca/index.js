@@ -16,6 +16,8 @@ document.getElementById("submit").onclick = function() {
     let feedback = document.getElementById("feedback");
     let forca = document.getElementById("forca");
 
+    document.getElementById("guess").value = "";
+
     // Check if it's a number
 
     if (isNaN(Number(guess))) {
