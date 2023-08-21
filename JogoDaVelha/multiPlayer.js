@@ -1,4 +1,5 @@
-const cells = document.querySelectorAll(".cell");
+const cellsNodeList = document.querySelectorAll(".cell");
+const cells = Array.apply("null", cellsNodeList);
 const feedback = document.querySelector("#feedback");
 const restartBtn = document.querySelector("#restartBtn");
 let char = "X";
@@ -22,7 +23,6 @@ cells.forEach((element) => element.addEventListener("click", () => {
     if (!won) {
         let valid = putChar(element);
         checkWinCondition();
-        console.log(won);
         if (valid && !won) {
             changeChar();
         }
@@ -74,14 +74,18 @@ function checkWinCondition() {
 }
 
 function checkDrawCondition() {
+    let draw = true;
+
     if (!won) {
-        for (let i = 0; i <= cells.length - 1; i++) {
-            if (cells[i].textContent == "") {
-                break;
-            } else if (i == 8) {
-                feedback.textContent = `O jogo empatou`;
-                restartBtn.style.visibility = "visible";
-            }
+        const whiteSpaces = cells.filter(element => {
+            return element.textContent === "";
+        });
+
+        if (whiteSpaces.length !== 0) {
+            draw = false;
+        } else {
+            feedback.textContent = `O jogo empatou`;
+            restartBtn.style.visibility = "visible";
         }
     }
 }
