@@ -37,6 +37,8 @@ function addDoList() {
 
     inputHTML.value = "";
 
+    // Se input for vazio
+
     if (input !== "") {
         addToDo.textContent = input;
         checkbox.type = "checkbox";
@@ -102,12 +104,16 @@ function showStatusSubmit() {
 }
 
 function showStatusFunction(element : HTMLInputElement) {
+    // Declara variáveis
+
     const completesArray = Array.from(
         document.getElementsByClassName("complete") as HTMLCollectionOf<HTMLDivElement>
     );
     const incompletesArray = Array.from(
         document.getElementsByClassName("incomplete") as HTMLCollectionOf<HTMLDivElement>
     );
+
+    // Analisa a checkbox
 
     if (element.checked) {
         switch (element.id) {
