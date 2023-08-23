@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-Do List</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <h1 id="title">To-Do List</h1>
+
+        <div id="to-do">
+            <div id="inputDiv">
+                <input type="text" id="input">
+                <button id="submit">Submit</button>
+                <br>
+
+                <label for="all">Todas:</label>
+                <input type="radio" name="showStatus" id="all" class="showStatus" checked>
+                <label for="completes">Completas:</label>
+                <input type="radio" name="showStatus" id="completes" class="showStatus">
+                <label for="incompletes" id="incompletes">Incompletas:</label>
+                <input type="radio" name="showStatus" id="incompletes" class="showStatus">
+            </div>
+        </div>
+
+        <script src="./index.js"></script>
+    </body>
+</html>

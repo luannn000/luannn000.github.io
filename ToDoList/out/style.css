@@ -1,0 +1,51 @@
+html {
+    background-color: lightgreen;
+    background: linear-gradient(90deg, lightgreen 0%, rgb(87, 213, 255) 100%);
+    text-align: center;
+    font-family: monospace;
+}
+
+#title {
+    font-size: 2.5em;
+}
+
+#input {
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+#submit {
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 5px 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: rgb(223, 223, 223);
+}
+
+.listDiv {
+    display: inline-block;
+    background-color: white;
+    border-radius: 15px;
+    padding: 1px 10px;
+    margin-top: 2%;
+    width: 60%;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.listP {
+    display: inline;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.complete .listDiv .listP {
+    text-decoration: line-through;
+}
