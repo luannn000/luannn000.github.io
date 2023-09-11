@@ -11,11 +11,11 @@ body {
     font-size: 90px;
 }
 
-#playP, #configP {
+#playP, #configP, #playMP {
     font-size: 30px;
 }
 
-#playA, #configA {
+#playA, #configA, #playMA {
     text-decoration: none;
     color: white;
     cursor: pointer;
