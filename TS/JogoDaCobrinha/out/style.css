@@ -1,0 +1,78 @@
+body {
+    background-color: black;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* IndexHTML */
+
+#title {
+    color: white;
+    font-size: 90px;
+}
+
+#playP, #configP {
+    font-size: 30px;
+}
+
+#playA, #configA {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* ConfigHTML*/
+
+#how-to-play, #how-to-playP, #configH1, #label {
+    color: white;
+}
+
+#input {
+    border-radius: 15px;
+}
+
+#submit {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+}
+
+#playAConfig {
+    border: 1px solid white;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+}
+
+/* ComputerHTML */
+
+#game-container {
+    text-align: center;
+}
+
+#game-board {
+    margin-top: 30px;
+    border: 1px solid black;
+    height: 300px;
+    width: 300px;
+}
+
+#score {
+    font-size: 100px;
+    color: white;
+}
+
+#reset-button {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 22px;
+    width: 100px;
+    height: 50px;
+    border: 4px solid white;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
