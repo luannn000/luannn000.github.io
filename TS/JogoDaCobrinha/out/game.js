@@ -24,6 +24,44 @@ let snake = [
     { x: unitSize * 4, y: 0 },
 ];
 let foodExists = false;
+// Mobile
+{
+    const controls = document.querySelectorAll(".controls");
+    controls === null || controls === void 0 ? void 0 : controls.forEach((element) => {
+        element.addEventListener('click', (event) => {
+            const target = event.target;
+            switch (target.id) {
+                case 'down':
+                    if (yVelocity == 0) {
+                        xVelocity = 0;
+                        yVelocity = unitSize;
+                    }
+                    break;
+                case 'right':
+                    if (xVelocity == 0) {
+                        xVelocity = unitSize;
+                        yVelocity = 0;
+                    }
+                    break;
+                case 'up':
+                    if (yVelocity == 0) {
+                        xVelocity = 0;
+                        yVelocity = -unitSize;
+                    }
+                    break;
+                case 'left':
+                    if (xVelocity == 0) {
+                        xVelocity = -unitSize;
+                        yVelocity = 0;
+                    }
+                    break;
+                default:
+                    break;
+            }
+        });
+    });
+}
+// Fim Mobile
 window.addEventListener("keydown", changeDirection);
 resetButton.addEventListener("click", resetGame);
 gameStart();
@@ -110,7 +148,6 @@ function moveSnake() {
             }
         }
     });
-    console.log(snake);
 }
 function drawSnake() {
     snake.forEach((element) => {
