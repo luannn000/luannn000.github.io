@@ -11,11 +11,11 @@ body {
     font-size: 90px;
 }
 
-#playP, #configP, #playMP {
+.P {
     font-size: 30px;
 }
 
-#playA, #configA, #playMA {
+.A {
     text-decoration: none;
     color: white;
     cursor: pointer;
@@ -31,20 +31,18 @@ body {
     border-radius: 15px;
 }
 
-#submit {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    border: 1px solid white;
-    border-radius: 15px;
-    background-color: black;
-    color: white;
+#play-div-pc, #play-div-mobile {
+    margin-top: 15px;
 }
 
-#playAConfig {
+.play {
+    display: inline;
     border: 1px solid white;
     border-radius: 15px;
     text-decoration: none;
     color: white;
     padding: 5px 20px;
+    cursor: pointer;
 }
 
 /* ComputerHTML */

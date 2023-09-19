@@ -24,6 +24,11 @@ let snake = [
     { x: unitSize * 4, y: 0 },
 ];
 let foodExists = false;
+let userResponseGame = 100;
+// Config response
+if (location.href.indexOf("?") != -1) {
+    userResponseGame = Number(location.href.slice(location.href.lastIndexOf("?") + 1));
+}
 // Mobile
 {
     const controls = document.querySelectorAll(".controls");
@@ -66,7 +71,7 @@ window.addEventListener("keydown", changeDirection);
 resetButton.addEventListener("click", resetGame);
 gameStart();
 function gameStart() {
-    const interval = setInterval(nextTick, 100);
+    const interval = setInterval(nextTick, userResponseGame);
 }
 function nextTick() {
     clearBoard();

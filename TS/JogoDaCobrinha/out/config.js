@@ -1,7 +1,13 @@
+"use strict";
 const input = document.querySelector("#input");
-const submit = document.querySelector("#submit");
+const playButtonPC = document.querySelector("#play-button-pc");
+const playButtonMob = document.querySelector("#play-button-mob");
 let userResponse = 100;
-submit.addEventListener("click", () => {
+playButtonPC.addEventListener("click", () => {
     userResponse = Number(input.value);
+    location.replace(`http://127.0.0.1:5500/TS/JogoDaCobrinha/out/computer.html?${userResponse}`);
 });
-export let user = userResponse;
+playButtonMob.addEventListener("click", () => {
+    userResponse = Number(input.value);
+    location.replace(`http://127.0.0.1:5500/TS/JogoDaCobrinha/out/mobile.html?${userResponse}`);
+});
