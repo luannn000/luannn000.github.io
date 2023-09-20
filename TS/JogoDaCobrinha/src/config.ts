@@ -6,10 +6,10 @@ let userResponse : number = 100;
 
 playButtonPC.addEventListener("click", () => {
     userResponse = Number(input.value);
-    location.replace(`http://127.0.0.1:5500/TS/JogoDaCobrinha/out/computer.html?${userResponse}`);
+    location.replace(`https://luannn000.github.io/TS/JogoDaCobrinha/out/computer.html?${userResponse}`);
 });
 
 playButtonMob.addEventListener("click", () => {
     userResponse = Number(input.value);
-    location.replace(`http://127.0.0.1:5500/TS/JogoDaCobrinha/out/mobile.html?${userResponse}`);
+    location.replace(`https://luannn000.github.io/TS/JogoDaCobrinha/out/mobile.html?${userResponse}`);
 });
