@@ -68,12 +68,12 @@ body {
     }
 
     #game-container {
-        height: 225px;
-        width: 225px;
+        height: 226px;
+        width: 226px;
     }
 
     .genius-colors {
-        height: 114px;
-        width: 114px;
+        height: 112px;
+        width: 112px;
     }
 }
