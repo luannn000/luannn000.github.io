@@ -3,7 +3,14 @@ let submitHTML = document.getElementById("submit");
 let feedbackHTML = document.getElementById("feedback");
 let finalHTML = document.getElementById("final");
 
-submitHTML.addEventListener('click', () => {
+submitHTML.addEventListener('click', calculate);
+window.addEventListener('keypress', (event) => {
+    if (event.key == "Enter") {
+        calculate();
+    }
+})
+
+function calculate() {
     let media = mediaHTML.value;
     let final = false;
 
@@ -44,4 +51,4 @@ submitHTML.addEventListener('click', () => {
     else {
         finalHTML.style.visibility = "hidden";
     }
-})
+}
