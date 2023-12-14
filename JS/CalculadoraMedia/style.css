@@ -1,32 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 body {
-    text-align: center;
-    font-family: consolas;
-    background-color: #7cd69f;
+    background-color: black;
+    display: grid;
 }
 
 #container {
-    background-color: #298352;
-    height: 80vh;
-    margin: 0px 15%;
-    border-radius: 50px;
+    place-self: center;
+    display: grid;
 }
 
-#title {
-    padding-top: 15px;
+h1 {
+    color: rgb(180, 180, 180);
+    font-family: 'Arvo', sans-serif;
+    font-size: x-large;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#media {
+    width: 100%;
+    background-color: rgb(180, 180, 180);
+    border: 0px;
+    border-radius: 15px;
+    text-align: center;
 }
 
 #submit {
-    background-color: #00592c;
-    padding: 5px 10px;
+    place-self: center;
+    margin-top: 10px;
+    background-color: rgb(0, 255, 0);
+    border: 0px;
     border-radius: 50px;
-    border: 1px solid black;
-    cursor: pointer;
+    padding: 2px 5px;
+    font-family: 'Roboto', sans-serif;
+    transition-duration: 0.4s;
 }
 
-#submit:hover {
-    background-color: #00592caf;
+#submit:active {
+    transition-duration: 0s;
+    transform: scale(0.96);
+    background-color: rgb(0, 200, 0);
 }
 
-#response {
+#feedback {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     visibility: hidden;
+}
+
+#final {
+    text-align: center;
+    margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    visibility: hidden;
+}
+
+@media screen and (min-width: 900px) {
+    h1 {
+        font-size: xx-large;
+    }
+
+    #submit {
+        padding: 5px 10px;
+    }
+
+    #submit:hover {
+        cursor: pointer;
+        transform: scale(1.10);
+    }
 }
