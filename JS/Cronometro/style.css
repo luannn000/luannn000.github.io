@@ -22,7 +22,7 @@ body {
 button {
     margin: 0px 0px;
     border-radius: 50px;
-    padding: 12px 40px;
+    padding: 12px 30px;
     background-color: black;
     font-weight: bolder;
     font-family: sans-serif;
@@ -75,4 +75,28 @@ button {
 #reset-button:active {
     transition: 0s;
     background-color: rgb(120, 0, 0);
+}
+
+/* Para PC */
+@media screen and (min-width: 600px) {
+    button {
+        padding: 12px 40px;
+    }
+    #start-button:hover {
+        color: white;
+        background-color: rgb(0, 192, 0);
+        padding: 15px 50px
+    }
+
+    #stop-button:hover {
+        color: white;
+        background-color: grey;
+        padding: 15px 50px
+    }
+
+    #reset-button:hover {
+        color: white;
+        background-color: rgb(192, 0, 0);
+        padding: 15px 50px
+    }
 }
