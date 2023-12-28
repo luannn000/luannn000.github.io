@@ -4,25 +4,25 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jogo da Forca</title>
+        <link rel="stylesheet" href="./reset.css">
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <h1>Jogo da forca</h1>
+        <div id="container">
+            <h1>Jogo da forca</h1>
 
-        <label for="guess" id="myLabel">Chute uma letra:</label>
-        <br>
-        <input type="text" id="guess" maxlength="1">
-        <br>
-        <button id="submit">Submit</button>
-        <br>
-        <p id="forca"></p>
+            <label for="guess" id="myLabel">Chute uma letra:</label>
+            <input type="text" id="guess" maxlength="1">
+            <button id="submit">Submit</button>
+            <p id="forca"></p>
 
-        <p id="feedback"></p>
+            <p id="feedback"></p>
 
-        <p id="playAgain"></p>
+            <p id="playAgain"></p>
 
-        <button id="yesButton" hidden>Sim</button>
-        <button id="noButton" hidden>Não</button>
+            <button id="yesButton" hidden>Sim</button>
+            <button id="noButton" hidden>Não</button>
+        </div>
 
         <script src="./index.js"></script>
     </body>

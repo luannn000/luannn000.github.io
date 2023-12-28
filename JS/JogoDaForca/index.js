@@ -8,8 +8,14 @@ let tries = 5;
 
 // onclick
 
-document.getElementById("submit").onclick = function() {
+document.getElementById("submit").onclick = main;
+window.addEventListener("keypress", () => {
+    if (event.key === "Enter") {
+        main();
+    }
+});
 
+function main() {
     // HTML variables
 
     let guess = document.getElementById("guess").value.toUpperCase();

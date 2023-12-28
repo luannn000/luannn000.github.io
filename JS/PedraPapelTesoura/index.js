@@ -25,10 +25,13 @@ function buttonClick(index) {
     (playerChoice == "📃" && pcChoice == "🪨") ||
     (playerChoice == "✂️" && pcChoice == "📃")) {
         resultHTML.textContent = "VOCÊ VENCEU!";
+        resultHTML.style.color = "rgb(0, 200, 0)";
     }
     else if (playerChoice == pcChoice) {
         resultHTML.textContent = "EMPATOU!";
+        resultHTML.style.color = "grey";
     } else {
         resultHTML.textContent = "VOCÊ PERDEU!";
+        resultHTML.style.color = "rgb(200, 0, 0)";
     }
 }

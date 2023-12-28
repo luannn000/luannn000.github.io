@@ -1,20 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
 body {
-    background-color: rgb(37, 37, 37);
-    font-family: consolas;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    display: grid;
 }
 
 #container {
+    place-self: center;
+    display: grid;
+}
+
+#title {
+    font-size: 40px;
+    color: grey;
+}
+
+#playerChoice, #computerChoice {
+    font-size: 25px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.801);
-    color: white;
-    padding: 1px 0px 15px 0px;
-    border-radius: 30px;
-    margin: 100px 10%;
+}
+
+#playerChoice {
+    color: rgb(0, 200, 0);
+}
+
+#computerChoice {
+    color: rgb(200, 0, 0);
+}
+
+#result {
+    text-align: center;
+    font-size: 20px;
+}
+
+#buttons {
+    margin-top: 20px;
+    place-self: center;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
 }
 
 .myButtons {
-    background-color: rgb(53, 53, 53);
-    padding: 5px 20px;
-    border-radius: 25px;
-    cursor: pointer;
+    padding: 4px 20px;
+    border: 2px solid grey;
+    border-radius: 15px;
+    background-color: black;
+    transition-duration: 0.4s;
+}
+
+@media screen and (min-width: 500px) {
+    .myButtons:hover {
+        background-color: grey;
+        transform: scale(1.2);
+        cursor: pointer;
+    }
 }
